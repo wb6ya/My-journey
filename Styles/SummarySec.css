@@ -1,0 +1,174 @@
+.summarys{
+    padding: 0 35px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-sub-background)
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 700;
+}
+.SummarysPage{
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+.moreSum{
+    line-height: 170%;
+    text-decoration: none;
+    height: 35px;
+    width: 100px;
+    background-color: var(--clr-pro-bg);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1.24rem;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+    color: var(--clr-sum-btn);
+    left: 1px;
+    border: 1px solid var(--clr-sum-btn);
+    top: 22%;
+    border-bottom: none;
+}
+.moreSum:hover{
+    color: var(--clr-pro-bg);
+    background-color: var(--clr-sum-btn);
+}
+.SummarysPage i{
+    height: 50px;
+    width: 50px;
+    background-color: var(--clr-sum-btn);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 1.24rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+    color: var(--clr-pro-bg);
+}
+#arrow-left{
+    left: -22px;
+}
+.SummarysPage i:last-child{
+    right: -22px;
+}
+.SummarysPage i:hover{
+    opacity: 90%;
+}
+.SummarysPage .card-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin:  100px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.card-list::-webkit-scrollbar{
+    display: none;
+}
+.card-list :where(.card-item, .card-img){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-list.no-transition{
+    scroll-behavior: auto;
+}
+.card-list.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.card-list.dragging .card-item{
+    cursor: grab;
+    user-select: none;
+}
+.card-list .card-item{
+    scroll-snap-align: start;
+    height: 342px;
+    padding-bottom: 15px;
+    background-color: var(--clr-pro-bg);
+    border-radius: 8px;
+    list-style: none;
+    cursor: pointer;
+    border: 2px solid  rgba(128, 128, 128, 0.377);
+    user-select: none;
+}
+.card-img-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 237, 238, 0.438);
+    border-bottom: 1px solid rgba(238, 231, 231, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-item .card-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    background-color: var(--clr-background);
+    border-radius: 50%;
+}
+.card-item .card-img img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.836);
+}
+.card-item h2 {
+    font-weight: 800;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+.card-item span {
+    color: var(--clr-text);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 10px ;
+    margin-bottom: 30px;
+}
+.card-list .card-item .sum-btn{
+    font-size: 1.25rem;
+    padding: 5px 35px;
+    color: var(--clr-background);
+    border-radius: 6px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: var(--clr-sum-btn);
+    border: 1px solid var(--clr-sum-btn);
+    transition: 0.2s ease
+}
+.card-list .card-item .sum-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--clr-sum-btn);
+    color: var(--clr-sum-btn);
+}
+
+@media screen and (max-width: 900px) {
+    .SummarysPage .card-list {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .SummarysPage .card-list {
+        grid-auto-columns: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/General.css">
+    <link rel="stylesheet" href="../Styles/nav.css">
+    <link rel="stylesheet" href="../projects/ToDoList/ToDoList.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<body>
+    <div id="HomePage">
+        <div id="HomePage_Navbar">
+          <div class="nav-left">
+            <a class="lBtn" id="lang" href="bones-ar.html">ar</a>
+            <button class="lBtn" id="dlMode" onclick="modeUpdate()"><p id="dlMode1">🌑</p></button>
+          </div>
+  
+          <div  class="nav-mid">
+            <h1>WB6</h1>
+          </div>
+  
+          <div class="nav-right">
+            <a class="rBtn" id="sum-btn" href="#Summary-sec">Summarys</a>
+            <a class="rBtn" href="../HTML/Projects-en.html">Projects</a>
+            <a class="rBtn" href="">Contact</a>
+          </div>
+        </div>
+  
+        <hr class="hr">
+    </div>
+    <div class="ToDo-contanor">
+       <div class="todo">
+        <div class="todolist-contanor">
+            <div class="todolist">
+                <p class="empty">EMPTY</p>
+            </div>
+        </div>
+        <div class="addtodo">
+            <h2>To Do List</h2>
+            <input class="todoname" type="text"  placeholder="Wash the dishes">
+            <input class="tododate" type="date" >
+            <input type="time">
+            <button class="todoaddbtn" onclick="add()" type="submit">Add</button>
+        </div>
+       </div>
+    </div>
+
+    <script src="/js/colorChanger.js"></script>
+    <script src="/projects/ToDoList/ToDoList.js"></script>
+</body>
+</html>

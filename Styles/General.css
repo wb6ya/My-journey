@@ -1,0 +1,115 @@
+:root{
+  --clr-background: #181413;
+  --clr-nav: #221a18;
+  --clr-sub-background: #141110;
+  --clr-text: #DCA26C;
+
+  --clr-sum-bg: #ffffff1c;
+  --clr-sum-btn: white;
+    
+  --clr-pro-bg: #211c1c;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'stanly';
+    src: url('../fonts/Stanley.otf');
+}
+html{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+  position: relative;
+  color: var(--clr-text);
+  font-family: 'Rubik';
+  background-color: var(--clr-background);
+  opacity: 1;
+  background-image:  radial-gradient(var(--clr-sub-background) 2px, transparent 2px), radial-gradient(var(--clr-sub-background) 2px, var(--clr-background) 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+}
+.hr{
+    border: none;
+    border-top: 1px rgba(0, 0, 0, 0.24) solid;
+    width: 90%;
+    margin: auto;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.goUpBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--clr-sum-btn);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 132;
+    opacity: 0;
+  }
+  
+  .is-visible{
+    opacity: 1;
+  }
+  .is-hidden{
+    opacity: 0;
+    transform: translateX(100px);
+
+  }
+  .goUpIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .goUpIcon path {
+    fill: var(--clr-pro-bg);
+  }
+  
+  .goUpBtn:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: var(--clr-sum-btn);
+    align-items: center;
+  }
+  
+  .goUpBtn:hover .goUpIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .goUpBtn::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: var(--clr-pro-bg);
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .goUpBtn:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  

@@ -1,0 +1,90 @@
+.gameContanor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+.lBtn {
+    display: none;
+}
+.game-score,.game-feed{
+    background-color: #803D3B;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-score{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.game-feed p, pre{
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: 'Rubik';
+}
+.RPS{
+    background-color: #803D3B;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.RPS-btn{
+    width: 30%;
+    height: 55%;
+    border: none;
+    background-color: #0000003a;
+    border-radius: 30%;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.RPS-btn:hover{
+    background-color: var(--clr-sub-background);
+}
+.score{
+    display: flex;
+    gap: 30px;
+}
+.score-btn{
+    margin-top: 10px;
+    background-color: #393646;
+    width: 50%;
+    height: 16%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.score p{
+    font-size: 1.3rem;
+}
+.reset{
+    padding: 8px 40px;
+    color:var(--clr-text);
+    border: 1px solid var(--clr-text);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.reset:hover {
+    background-color: var(--clr-text);
+    color: var(--clr-sub-background);
+}

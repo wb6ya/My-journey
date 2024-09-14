@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/nav.css">
+    <link rel="stylesheet" href="/Styles/General.css">
+    <link rel="stylesheet" href="/projects/xo/Tic-Tac-Tao.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="HomePage">
+        <div id="HomePage_Navbar">
+          <div class="nav-left">
+            <a class="lBtn" id="lang" href="bones-ar.html">ar</a>
+            <button class="lBtn" id="dlMode" onclick="modeUpdate()"><p id="dlMode1">🌑</p></button>
+          </div>
+  
+          <div  class="nav-mid">
+            <h1>WB6</h1>
+          </div>
+  
+          <div class="nav-right">
+            <a class="rBtn" href="/HTML/bones.html">Home</a>
+            <a class="rBtn" href="HTML/Project Page-en.html">More Projects</a>
+          </div>
+        </div>
+        <hr class="hr">
+    </div> 
+<div class="xo">
+    <div class="xo-game">
+        <div class="title">
+            <h1 class="turn">Tic Tac Tao</h1>
+        </div>
+        <div class="game">
+            <button class="xo-btn effect" id="box-1" onclick="start(0)"></button>
+            <button class="xo-btn effect" id="box-2" onclick="start(1)"></button>
+            <button class="xo-btn effect" id="box-3" onclick="start(2)"></button>
+            <button class="xo-btn effect" id="box-4" onclick="start(3)"></button>
+            <button class="xo-btn effect" id="box-5" onclick="start(4)"></button>
+            <button class="xo-btn effect" id="box-6" onclick="start(5)"></button>
+            <button class="xo-btn effect" id="box-7" onclick="start(6)"></button>
+            <button class="xo-btn effect" id="box-8" onclick="start(7)"></button>
+            <button class="xo-btn effect" id="box-9" onclick="start(8)"></button>
+        </div>
+    </div>
+</div>
+    <script src="/js/changeColor.js"></script>
+    <script src="/projects/xo/Tic-Tac-Tao.js"></script>
+</body>
+
+
+</html>

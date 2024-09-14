@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--                        Home Page CSS                               -->
+    <link rel="stylesheet" href="../Styles/General.css">
+    <link rel="stylesheet" href="../Styles/nav.css">
+    <link rel="stylesheet" href="../Styles/MainSec.css">
+    <link rel="stylesheet" href="../Styles/ProjectSec.css">
+    <link rel="stylesheet" href="../Styles/SummarySec.css">
+    <link rel="stylesheet" href="../Styles/waves.css">
+    <!--                        Home Page Fonts                               -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+       <!--                        Awsome fonts                               -->
+    <script src="https://kit.fontawesome.com/d5aa9e6f1a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="HomePage">
+      <div id="HomePage_Navbar">
+        <div class="nav-left">
+          <a class="lBtn" id="lang" href="bones-ar.html">ar</a>
+          <button class="lBtn" id="dlMode" onclick="light()"><p id="dlMode1">🌑</p></button>
+        </div>
+
+        <div  class="nav-mid">
+          <h1>WB6</h1>
+        </div>
+
+        <div class="nav-right">
+          <a class="rBtn" href="">Summarys</a>
+          <a class="rBtn" href="../HTML/Project Page-en.html">Projects</a>
+        </div>
+      </div>
+
+      <hr class="hr">
+
+      <div id="HomePage_Main">
+        <div id="HomePage_info">
+          <h1>Hey there!</h1>
+          <p>My name is Abdulaziz Mohammed. I'm passionate about learning new things related to programming and computers. I spend most of my time developing my skills across different fields. On this page, you'll find all my summaries and the projects I've worked on myself. You might notice some mistakes here and there since I'm still learning, but I'm always improving. Thanks for stopping by!</p>
+        </div>
+
+        <div>
+          <div id="HomePage_pic"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="wave-1">
+      <!-- content here -->
+      <div class="curve-1"></div>
+    </section>
+
+    <div class="summarys">
+    <div class="SummarysPage">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <h2 class="title">Summary's</h2>
+      <ul class="card-list">
+        <li class="card-item">
+            <div class="card-img"><img src="../images/sum-img/java.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">Java</h2>
+          <span class="sum-desc">Java is a high-level, object-oriented programming language ...</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/spring.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">Spring</h2>
+          <span class="sum-desc">
+            Spring Framework is a powerful, lightweight framework for building Java applications.</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/html.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">HTML</h2>
+          <span class="sum-desc">HTML (HyperText Markup Language) is the standard language used to create and design webpages</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>     
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/css-3 (2).png" alt="" draggable="false"></div>
+          <h2 class="sum-name">CSS</h2>
+          <span class="sum-desc">
+            CSS is a stylesheet language used to define the appearance and layout of HTML documents.</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/js (1).png" alt="" draggable="false"></div>
+          <h2 class="sum-name">JavaScript</h2>
+          <span class="sum-desc">
+            JavaScript is used primarily for web development to create interactive and dynamic web pages</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/1174949_js_react js_logo_react_react native_icon (1).png" alt="" draggable="false"></div>
+          <h2 class="sum-name">REACT</h2>
+          <span class="sum-desc">React is a popular JavaScript library for building user interfaces, especially single-page applications. </span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </div>
+
+  <section class="wave-2">
+    <!-- content here -->
+    <div class="curve-2"></div>
+  </section>
+
+    <div id="ProjectsPage">
+
+        <div id="project_title"><h2>Projects</h2></div>
+
+        <div class="contanor">
+          <div class="projects">
+
+            <div class="project_pic">
+              <div class="project_img">
+                <img src="../projects/xo/xo.PNG" alt="">
+              </div>
+              <div class="used_lang">
+                <div id="WhatUsed"><p>Used : </p></div>
+                <div class="langUsed"><img src="../images/Used icons/html.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/css.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/js.png" alt=""></div>
+                <div class="langUsed"><img alt=""></div>
+              </div>
+            </div>
+
+            <div class="project_info">
+              <div class="project_name">
+                <h3>Tic tac tao</h3>
+              </div>
+              <div class="project_desc">
+                <p>Simple tic tac tao game and its my first game project</p>
+              </div>
+              <div class="project_btn">
+                <a href="../projects/xo/Tic-Tac-Tao.html">try Demo!</a>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="contanor">
+          <div class="projects">
+
+            <div class="project_pic">
+              <div class="project_img">
+                <img src="../projects/xo/xo.PNG" alt="">
+              </div>
+              <div class="used_lang">
+                <div id="WhatUsed"><p>Used : </p></div>
+                <div class="langUsed"><img src="../images/Used icons/html.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/css.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/js.png" alt=""></div>
+                <div class="langUsed"><img alt=""></div>
+              </div>
+            </div>
+
+            <div class="project_info">
+              <div class="project_name">
+                <h3>Rochambeau</h3>
+              </div>
+              <div class="project_desc">
+                <p>Simple tic tac tao game and its my first game project</p>
+              </div>
+              <div class="project_btn">
+                <a href="../projects/Rochambeau/Rochambeau.html">try Demo!</a>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div id="load"><button id="loadBtn" onclick="loading('en')">load more</button></div>
+
+  <script src="../js/changeColor.js"></script>
+  <script src="../js/load.js"></script>
+  <script src="../js/swiper.js" defer></script>
+</body>
+</html>

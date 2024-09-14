@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/General.css">
+    <link rel="stylesheet" href="/Styles/nav.css">
+    <link rel="stylesheet" href="/projects/Rochambeau/Rochambeau.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="HomePage">
+        <div id="HomePage_Navbar">
+          <div class="nav-left">
+            <a class="lBtn" id="lang" href="">ar</a>
+            <button class="lBtn" id="dlMode" onclick="modeUpdate()"><p id="dlMode1">🌑</p></button>
+        </div>
+  
+          <div class="nav-mid">
+            <h1>WB6</h1>
+          </div>
+  
+          <div class="nav-right">
+            <a class="rBtn" href="/HTML/bones.html">Home</a>
+            <a class="rBtn" href="/HTML/Project Page-en.html">Projects</a>
+          </div>
+        </div>
+  
+        <hr class="hr">
+    </div>
+    <div class="gameContanor">
+        <div class="game-score">
+            <h1>Rochambeau</h1>
+        </div>
+        <div class="game-feed">
+            <p></p>
+        </div>
+        <div class="RPS">
+            <button class="RPS-btn" onclick="game('✊')">✊</button class="RPS-btn">
+            <button class="RPS-btn" onclick="game('✋')">✋</button class="RPS-btn">
+            <button class="RPS-btn" onclick="game('✌️')">✌️</button class="RPS-btn">
+        </div>
+        <div class="score-btn">
+            <div class="score">
+                <p class="win">Win's :</p>
+                <p class="Lose">Loses's :</p>
+                <p class="tie">Tie's :</p>
+            </div>
+            <button class="reset" onclick="reset()">reset Score</button>
+        </div>
+    </div>
+    
+    <script src="/js/changeColor.js"></script>
+    <script src="../Rochambeau/Rochambeau.js"></script>
+</body>
+</html>

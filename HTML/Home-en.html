@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--                        Home Page CSS                               -->
+    <link rel="stylesheet" href="../Styles/General.css">
+    <link rel="stylesheet" href="../Styles/nav.css">
+    <link rel="stylesheet" href="../Styles/MainSec.css">
+    <link rel="stylesheet" href="../Styles/ProjectSec.css">
+    <link rel="stylesheet" href="../Styles/SummarySec.css">
+    <link rel="stylesheet" href="../Styles/waves.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../midea/Home-midea.css">
+    <link rel="stylesheet" href="../Styles/mobile-nav.css">
+    <!--                        Home Page Fonts                               -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+       <!--                        Awsome fonts                               -->
+    <script src="https://kit.fontawesome.com/d5aa9e6f1a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section id="HomePage">
+
+      <header id="HomePage_Navbar">
+        <div class="nav-left">
+          <a class="lBtn" id="lang" href="bones-ar.html">ar</a>
+          <button class="lBtn" id="dlMode" onclick="modeUpdate()"><p id="dlMode1">🌑</p></button>
+        </div>
+
+        <div  class="nav-mid">
+          <h1>WB6</h1>
+        </div>
+
+        <div class="nav-right">
+          <a class="rBtn" id="sum-btn" href="#Summary-sec">Summarys</a>
+          <a class="rBtn" href="../HTML/Projects-en.html">Projects</a>
+          <a class="rBtn" href="">Contact</a>
+
+        </div>
+      </header>
+      <div class="mobile-nav">
+        <h1>WB6</h1>
+        <button onclick="showOptions()" class="brger-btn">=</button>
+        <div class="mobile-nav-item">
+            <a href="/HTML/Home-en.html">Home</a>
+            <a href="/HTML/Projects-en.html">More Projcts</a>
+            <a href="">Contact</a>
+            <a class="lBtn" id="lang" href="bones-ar.html">ar</a>
+          <button class="lBtn" id="dlMode" onclick="modeUpdate()"><p id="dlMode1">🌑</p></button>
+          </div>
+      </div>
+
+      <hr class="hr">
+
+      <section id="HomePage_Main">
+        <div id="HomePage_info">
+          <h1>Hey there!</h1>
+          <p>My name is Abdulaziz Mohammed. I'm passionate about learning new things related to programming and computers. I spend most of my time developing my skills across different fields. On this page, you'll find all my summaries and the projects I've worked on myself. You might notice some mistakes here and there since I'm still learning, but I'm always improving. Thanks for stopping by!</p>
+        </div>
+
+        <div>
+          <div id="HomePage_pic"></div>
+        </div>
+
+      </section>
+      <a href="#HomePage_Navbar" class="goUpBtn">
+        <svg class="goUpIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="wave-1">
+      <!-- content here -->
+      <div class="curve-1"></div>
+    </section>
+
+    <section class="summarys" id="Summary-sec">
+    <div class="SummarysPage">
+      <a class="moreSum" href="/HTML/Summarys.html">&#8249; more</a>
+      <i id="arrow-left" class="fa-solid fa-angle-left"></i>
+      <h2 class="title">Summary's</h2>
+      <ul class="card-list">
+        <li class="card-item">
+            <div class="card-img"><img src="../images/sum-img/java.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">Java</h2>
+          <span class="sum-desc">Java is a high-level, object-oriented programming language ...</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/spring.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">Spring</h2>
+          <span class="sum-desc">
+            Spring Framework is a powerful, lightweight framework for building Java applications.</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/html.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">HTML</h2>
+          <span class="sum-desc">HTML (HyperText Markup Language) is the standard language used to create and design webpages</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>     
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/css.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">CSS</h2>
+          <span class="sum-desc">
+            CSS is a stylesheet language used to define the appearance and layout of HTML documents.</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/javascript.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">JavaScript</h2>
+          <span class="sum-desc">
+            JavaScript is used primarily for web development to create interactive and dynamic web pages</span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="../images/sum-img/react.png" alt="" draggable="false"></div>
+          <h2 class="sum-name">REACT</h2>
+          <span class="sum-desc">React is a popular JavaScript library for building user interfaces, especially single-page applications. </span>
+          <button class="sum-btn">Learn More!</button>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </section>
+
+  <section class="wave-2">
+    <!-- content here -->
+    <div class="curve-2"></div>
+  </section>
+
+  <section id="ProjectsPage">
+
+        <div id="project_title"><h2>Projects</h2></div>
+
+        <div class="contanor">
+          <div class="projects">
+
+            <div class="project_pic">
+              <div class="project_img">
+                <a href="Tic-Tac-Toe-en.html"><img src="../projects/xo/xo.PNG" alt=""></a>
+              </div>
+              <div class="used_lang">
+                <div id="WhatUsed"><p>Used : </p></div>
+                <div class="langUsed"><img src="../images/Used icons/html.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/css.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/js.png" alt=""></div>
+                <div class="langUsed"><img alt=""></div>
+              </div>
+            </div>
+
+            <div class="project_info">
+              <div class="project_name">
+                <h3>Tic tac toe</h3>
+              </div>
+              <div class="project_desc">
+                <p>Tic-tac-toe is a simple game where two players take turns marking X or O on a 3x3 grid. The goal is to place three of your marks in a row, column, or diagonal before your opponent does.</p>
+              </div>
+              <div class="project_btn">
+                <a href="/HTML/Tic-Tac-Toe-en.html">try Demo!</a>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="contanor" dir="rtl">
+          <div class="projects">
+
+            <div class="project_pic">
+              <div class="project_img">
+                <img src="../projects/xo/xo.PNG" alt="">
+              </div>
+              <div class="used_lang">
+                <div id="WhatUsed"><p>Used : </p></div>
+                <div class="langUsed"><img src="../images/Used icons/html.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/css.png" alt=""></div>
+                <div class="langUsed"><img src="../images/Used icons/js.png" alt=""></div>
+                <div class="langUsed"><img alt=""></div>
+              </div>
+            </div>
+
+            <div class="project_info">
+              <div class="project_name">
+                <h3>Rochambeau</h3>
+              </div>
+              <div class="project_desc">
+                <p>Rock-paper-scissors <strong>(Rochambeau)</strong> computer game lets you play against the computer, selecting rock, paper, or scissors. The winner is decided by the classic rules: rock beats scissors, scissors beat paper, and paper beats rock.</p>
+              </div>
+              <div class="project_btn">
+                <a href="/HTML/Rochambeau-en.html">!try Demo</a>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+      <div id="load">
+        <div class="load"><button id="loadBtn" onclick="wait('en')">Load more</button></div>
+      </div>
+
+  <script src="../js/sumSwiper.js" defer></script>
+  <script src="../js/colorChanger.js"></script>
+  <script src="../js/projectLoader.js"></script>
+  <script src="../js/goUpVisablity.js"></script>
+  <script src="../js/porjects-nav.js"></script>
+</body>
+</html>

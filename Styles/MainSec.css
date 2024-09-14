@@ -1,0 +1,30 @@
+#HomePage_Main{
+    height: 544px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#HomePage_info h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+#HomePage_info{
+    width: 450px;
+    text-align: center;
+}
+#HomePage_pic{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    height: 290px;
+    background-color: var(--clr-sub-background);
+    border: 3px solid rgba(128, 128, 128, 0.253);
+    border-radius: 400px;
+    border-top-left-radius: 700px;
+    background-image:url("../images/navPics/avatarPic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

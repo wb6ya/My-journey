@@ -1,0 +1,50 @@
+.wave-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    padding-top: 100px;
+    background-color: var(--clr-background);
+opacity: 1;
+background-image:  radial-gradient(var(--clr-nav) 2px, transparent 2px), radial-gradient(var(--clr-nav) 2px, var(--clr-background) 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+}
+
+.curve-1 {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+
+.curve-1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: var(--clr-sub-background);
+}
+
+.curve-1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--clr-background);
+opacity: 1;
+background-image:  radial-gradient(var(--clr-nav) 2px, transparent 2px), radial-gradient(var(--clr-nav) 2px, var(--clr-background) 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+    transform: translate(-4%, 40%);
+    z-index: 0;
+}
+
+
